@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ViavaCos/demo-require_context/issues"
   },
-  "homepage": "https://github.com/ViavaCos/demo-require_context#readme"
+  "homepage": "https://github.com/ViavaCos/demo-require_context#readme",
+  "devDependencies": {
+    "webpack": "^5.64.4"
+  }
 }
