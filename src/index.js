@@ -19,11 +19,11 @@ const modulesObj = {} // 模块合集
 let flatObj = {} // 扁平对象
 
 allModules.keys().forEach(fileName => {
-  modulesObj[fileName] = allModules.resolve(fileName)
+  modulesObj[fileName] = allModules(fileName)
 })
 
-for (const key in modulesData) {
-  flatObj = { ...flatObj, ...modulesData[key].default }
+for (const key in modulesObj) {
+  flatObj = { ...flatObj, ...modulesObj[key].default }
 }
 
 /**
